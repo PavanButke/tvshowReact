@@ -1,10 +1,9 @@
 import { useState, useContext } from "react";
 
-// Context
+
 import ShowsContext from "../context/shows/showsContext";
 import AlertsContext from "../context/alerts/alertsContext";
 
-// Components
 import Alert from "./Alert";
 
 const Searchbar = () => {
@@ -31,8 +30,7 @@ const Searchbar = () => {
       <form className="searchbar__form">
         <input
           type="text"
-          placeholder="Search For Tv Show"
-          value={searchTerm}
+    
           onChange={(e) => setSearchTerm(e.target.value)}
         />
         <button className="btn btn-block" onClick={onSearchHandler}>
