@@ -30,7 +30,8 @@ const Searchbar = () => {
       <form className="searchbar__form">
         <input
           type="text"
-    
+          placeholder="Search For Tv Show"
+          value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
         />
         <button className="btn btn-block" onClick={onSearchHandler}>
